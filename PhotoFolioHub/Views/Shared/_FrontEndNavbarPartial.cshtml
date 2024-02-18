@@ -13,30 +13,36 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <div class="nav-item">
-                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Photos</a>
+                    <a class="nav-link nav-link-1" aria-current="page" asp-action="Create">上傳</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link nav-link-2" href="videos.html">Videos</a>
+                    <a class="nav-link nav-link-2" aria-current="page" href="index.html">相片</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link nav-link-3" href="about.html">About</a>
+                    <a class="nav-link nav-link-3" href="videos.html">影片</a>
                 </div>
                 <div class="nav-item">
-                    <a class="nav-link nav-link-4" href="contact.html">Contact</a>
+                    <a class="nav-link nav-link-4" href="about.html">About</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link nav-link-1" href="contact.html">Contact</a>
                 </div>
 
+                <div class="nav-item">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">@ViewBag.UserName</a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Reports</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                <ul class="nav navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">@ViewBag.UserName</a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a href="#" class="dropdown-item">Reports</a>
-                            <a href="#" class="dropdown-item">Settings</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">Logout</a>
-                        </div>
-                    </li>
-                </ul>
+                
 
             </div>
         </div>
